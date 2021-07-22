@@ -82,3 +82,76 @@ body{
 .talika:hover .talika-title{
     display: block;
 }
+.card-images{
+    overflow: hidden;
+}
+
+.card-img{
+    transition: 0.6s ease-in;
+    overflow: hidden;
+}
+.card-img:hover{
+    transform: scale(1.1);
+}
+.nmbr,.love{
+    transition: 0.5s ease-out;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+}
+.nmbr:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: #fff;
+}
+.love:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: #fff;
+}
+.cow{
+    position: relative;
+}
+.cow::after{
+    content: " ";
+    width: 50px;
+    border: 3px solid red;
+    position: absolute;
+    top: 100%;
+    left: 0;   
+}
+.qurbani{
+    position: relative;
+}
+.qurbani::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    border:2px solid red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.city-img{
+    position: relative;
+    transition: 0.8s ease-in;
+}
+.city{
+    position: absolute;
+    top: 240px;
+    left: 90px;
+    font-size: 30px;
+    color: red;
+}
+.city-img:hover{
+    transform: rotateY(360deg);
+}
+.city::after{ 
+    content: "";
+    position: absolute;
+    width: 50px;
+    border: 2px solid red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+} 
